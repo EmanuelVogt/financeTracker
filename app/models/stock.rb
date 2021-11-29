@@ -1,4 +1,6 @@
 class Stock < ApplicationRecord
+  has_many :user_stocks
+  has_many :users, through: :user_stocks
 
   def self.new_lockup(ticker_symbol)
     client = IEX::Api::Client.new(
