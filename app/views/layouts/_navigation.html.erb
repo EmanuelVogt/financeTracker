@@ -24,8 +24,8 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                     <li class="nav-item <%= 'active' if request.path == my_friends_path %>">
+                        <%= link_to 'Friends', my_friends_path, class: "nav-link"%>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
