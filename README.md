@@ -1,4 +1,4 @@
-# README
+# FinanceTracker
 
 Simple app made on ruby on rails in the udemy course 
 
