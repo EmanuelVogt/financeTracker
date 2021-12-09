@@ -8,7 +8,7 @@
       <hr>
       <strong>Name: </strong> <%= friend.full_name %>
       <hr>
-      <%= link_to "Profile", "#", class: "btn btn-sm btn-success" %>
+      <td><strong>Actions: </strong> <%= link_to "View Profile", user_path(friend), class: "btn btn-sm btn-success" %>
 
       <% if current_user.not_friends_with?(friend.id) %>
         <%= link_to 'Follow?' , friendships_path(friend: friend), class: 'btn btn-sm btn-success', method: :post%>
