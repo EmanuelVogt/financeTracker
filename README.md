@@ -6,6 +6,8 @@ Simple app made on ruby on rails in the udemy course
 * Ruby 2.7.2
 * NodeJS v16
 
+# To Install Dependencies
+* `bundle install`
+* `npm install`
 # To Run
-* bundle install
-* npm install 
+* `rails s`
